@@ -1,0 +1,12 @@
+{
+  "name": "greasyfork-readme-stats",
+  "version": "1.0.0",
+  "description": "Dynamically generated GreasyFork stats cards for your GitHub README",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

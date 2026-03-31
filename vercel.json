@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 15
+    }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/Angel2mp3/greasyfork-readme-stats"
+    }
+  ]
+}
