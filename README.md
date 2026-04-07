@@ -1,105 +1,128 @@
-# greasyfork-readme-stats
+<div align="center">
 
-Dynamically generated GreasyFork install stats cards for your GitHub README.
+# GreasyFork Readme Stats
 
-## Deploy your own
+**Dynamically generated GreasyFork install stats cards for your GitHub or other service's README**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Angel2mp3/greasyfork-readme-stats)
-
-No API keys or environment variables needed — works out of the box.
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
 
-## Usage
+### 📊 My GreasyFork Stats
 
-### Combined card (all scripts)
+![GreasyFork Stats](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3)
+
+</div>
+
+---
+
+## ✨ Features
+
+- **Zero config** — no API keys or environment variables needed
+- **10 built-in themes** — dark, light, dracula, tokyonight, nord, gruvbox, catppuccin, radical, merko, and default
+- **Fully customizable** — colors, borders, animations, sorting, and more
+- **Fast** — stats cache for 1 hour on Vercel's CDN, stale-while-revalidate up to 24 hours
+- **Two card layouts** — combined stats across all your scripts, or a single-script view
+
+---
+
+## 🚀 Deploy Your Own
+
+No API keys or environment variables needed — just one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Angel2mp3/greasyfork-readme-stats)
+
+---
+
+## 📖 Usage
+
+### All scripts (combined card)
 
 ```md
-![GreasyFork Stats](https://your-deployment.vercel.app/api?user=1578116-angel2mp3)
+![GreasyFork Stats](https://your-deployment.vercel.app/api?user=YOUR_GREASYFORK_USER_ID)
 ```
 
 ### Single script card
 
 ```md
-![Script Name](https://your-deployment.vercel.app/api?user=1578116-angel2mp3&script=568833)
+![Script Stats](https://your-deployment.vercel.app/api?user=YOUR_GREASYFORK_USER_ID&script=SCRIPT_ID)
 ```
 
-Find your script ID in the GreasyFork URL: `greasyfork.org/en/scripts/`**568833**`-script-name`
+> The script ID is the number in the GreasyFork URL: `greasyfork.org/scripts/`**`12345`**`-script-name`
 
 ---
 
-## Parameters
+## 🎨 Theme Showcase
 
-| Parameter | Default | Description |
-|---|---|---|
-| `user` | required | GreasyFork user ID (e.g. `1578116` or `1578116-angel2mp3`) |
-| `script` | — | Script ID for a single-script card. Omit for the combined card. |
-| `theme` | `default` | Preset color theme (see below) |
-| `title_color` | theme default | Hex color for the title and stat numbers (without `#`) |
-| `text_color` | theme default | Hex color for body text |
-| `bg_color` | theme default | Hex color for the card background |
-| `border_color` | theme default | Hex color for the border |
-| `hide_border` | `false` | Set to `true` to remove the border |
-| `border_radius` | `10` | Corner radius of the card (0–30) |
-| `custom_title` | — | Override the card title text |
-| `name_color` | same as `text_color` | Hex color for all script name labels |
-| `script_colors` | same as `text_color` | Comma-separated hex colors per script row (e.g. `ffffff,d14e5c,f00814`) |
-| `stat_color` | same as `text_color` | Hex color for the install numbers on the right |
-| `divider_color` | same as `border_color` | Hex color for the divider line |
-| `starred` | — | Comma-separated 0-based row indexes to mark with a ★ (e.g. `0,2`) |
-| `show_rank` | `false` | Show `#1`, `#2`… rank prefix on each script row |
-| `animate` | `true` | Set to `false` to disable the slide-in animation |
-| `compact` | `false` | Set to `true` for a smaller, tighter card |
-| `show_logo` | `false` | Show the GreasyFork logo flanking the title |
-| `sort` | `installs` | Order scripts: `installs` (most downloads first), `daily` (most daily first), `name`, `name_desc`, `none` (GreasyFork order) |
+**Default**
 
----
+![Default Theme](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3&theme=default)
 
-## Themes
+**Dark**
 
-| Name | Preview |
-|---|---|
-| `default` | dark bg, purple accent |
-| `dark` | GitHub dark, blue accent |
-| `light` | white bg, purple accent |
-| `radical` | dark purple, pink + cyan |
-| `dracula` | dracula palette |
-| `tokyonight` | tokyo night palette |
-| `merko` | dark green palette |
-| `gruvbox` | gruvbox palette |
-| `catppuccin` | catppuccin mocha |
-| `nord` | nord palette |
+![Dark Theme](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3&theme=dark)
 
-```md
-![GreasyFork Stats](https://your-deployment.vercel.app/api?user=1578116-angel2mp3&theme=dracula)
-```
+**Tokyo Night**
+
+![Tokyo Night Theme](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3&theme=tokyonight)
+
+**Dracula**
+
+![Dracula Theme](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3&theme=dracula)
+
+**Nord**
+
+![Nord Theme](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3&theme=nord)
+
+**Catppuccin**
+
+![Catppuccin Theme](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3&theme=catppuccin)
+
+**Gruvbox**
+
+![Gruvbox Theme](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3&theme=gruvbox)
+
+**Radical**
+
+![Radical Theme](https://greasyfork-readme-stats.vercel.app/api?user=1578116-angel2mp3&theme=radical)
 
 ---
 
-## Examples
+## ⚙️ Parameters
 
-Default:
-```md
-![GreasyFork Stats](https://your-deployment.vercel.app/api?user=1578116-angel2mp3)
-```
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `user` | GreasyFork user ID (required) | — |
+| `script` | Script ID for single-script card | — |
+| `theme` | Preset theme name | `default` |
+| `title_color` | Card title hex color | theme default |
+| `text_color` | Text hex color | theme default |
+| `bg_color` | Background hex color | theme default |
+| `border_color` | Border hex color | theme default |
+| `hide_border` | Hide card border (`true`/`false`) | `false` |
+| `border_radius` | Card corner radius (px) | `4.5` |
+| `compact` | Compact layout (`true`/`false`) | `false` |
+| `sort` | Sort order: `installs`, `daily`, `alpha`, `default` | `default` |
+| `show_rank` | Show install rank badge (`true`/`false`) | `true` |
+| `animate` | Enable animations (`true`/`false`) | `true` |
+| `show_logo` | Show GreasyFork logo (`true`/`false`) | `true` |
+| `starred` | Show only starred scripts (`true`/`false`) | `false` |
+| `title` | Custom card title | auto |
 
-Light theme, no border:
-```md
-![GreasyFork Stats](https://your-deployment.vercel.app/api?user=1578116-angel2mp3&theme=light&hide_border=true)
-```
+### Example with custom colors
 
-Custom colors:
 ```md
-![GreasyFork Stats](https://your-deployment.vercel.app/api?user=1578116-angel2mp3&bg_color=0d1117&title_color=ff6b6b&text_color=ffffff)
-```
-
-Single script with custom title:
-```md
-![My Script](https://your-deployment.vercel.app/api?user=1578116-angel2mp3&script=568833&custom_title=Grok+Enhancer&theme=tokyonight)
+![GreasyFork Stats](https://your-deployment.vercel.app/api?user=YOUR_ID&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false)
 ```
 
 ---
 
-## Caching
+## 📦 Caching
 
-Stats cache for **1 hour** on Vercel's CDN and serve stale for up to **24 hours** while revalidating in the background.
+Stats cache for **1 hour** on Vercel's CDN and serve stale for up to **24 hours** while revalidating in the background. This keeps load times fast without hammering GreasyFork's servers.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE) © [Angel2mp3](https://github.com/Angel2mp3)
